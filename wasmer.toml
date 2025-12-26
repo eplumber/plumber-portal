@@ -1,10 +1,10 @@
 [package]
 name = "enoew/plumber-portal"
-version = "0.1.0"
-description = "Plumber management portal"
+version = "0.1.1"
+description = "Plumber management portal"[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQE2-AKIbUpanEkJh8xCZwcv_wPXxYWP649NoiBNPuD0m9vX8sx1jZ4yMFdOFQYUx4-k6yd4CXp_1xlSlCgRv_s4xnUArcg8bIj7N_aTvPxobzlnXLGVjRdvqZu6yeULUDrVAubqMA%3D%3D)]
 
 [dependencies]
-"wasmer/python" = "3.11"
+"wasmer/python" = "^3.12"
 
 [fs]
 "/app" = "."
@@ -12,7 +12,8 @@ description = "Plumber management portal"
 [[command]]
 name = "server"
 module = "wasmer/python:python"
-runner = "https://webc.org/runner/wcgi"
+runner = "https://webc.org/runner/wcgi"[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQE2-AKIbUpanEkJh8xCZwcv_wPXxYWP649NoiBNPuD0m9vX8sx1jZ4yMFdOFQYUx4-k6yd4CXp_1xlSlCgRv_s4xnUArcg8bIj7N_aTvPxobzlnXLGVjRdvqZu6yeULUDrVAubqMA%3D%3D)]
 
 [command.annotations.wcgi]
 script = "app:app"
+```[[1](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQE2-AKIbUpanEkJh8xCZwcv_wPXxYWP649NoiBNPuD0m9vX8sx1jZ4yMFdOFQYUx4-k6yd4CXp_1xlSlCgRv_s4xnUArcg8bIj7N_aTvPxobzlnXLGVjRdvqZu6yeULUDrVAubqMA%3D%3D)]
