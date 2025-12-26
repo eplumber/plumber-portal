@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-blue-600 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-lg animate__animated animate__backInUp">
+        <h2 class="text-3xl font-black text-slate-800 mb-6">Add Expert</h2>
+        <form action="/save_person" method="POST" class="space-y-4">
+            <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 bg-slate-50 border rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none">
+            <div class="grid grid-cols-2 gap-4">
+                <input type="text" name="phone" placeholder="Phone" required class="p-4 bg-slate-50 border rounded-2xl outline-none">
+                <input type="text" name="cnic" placeholder="CNIC / ID" required class="p-4 bg-slate-50 border rounded-2xl outline-none">
+            </div>
+            <select name="exp" class="w-full p-4 bg-slate-50 border rounded-2xl outline-none">
+                <option>Junior (1-2 yrs)</option>
+                <option>Professional (3-5 yrs)</option>
+                <option>Expert (5+ yrs)</option>
+            </select>
+            <div class="flex gap-4 pt-4">
+                <button type="submit" class="flex-1 bg-blue-600 text-white font-bold py-4 rounded-2xl hover:bg-blue-700 transition shadow-lg active:scale-95">Save Data</button>
+                <a href="/dashboard" class="flex-1 bg-slate-100 text-slate-500 font-bold py-4 rounded-2xl text-center hover:bg-slate-200 transition">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
